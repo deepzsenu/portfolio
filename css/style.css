@@ -11,6 +11,7 @@
 }
 
 :root{
+    --icon-color: rgba(144,172,209,0.2);
     --heading:rgb(0 10 45);
     --para: rgb(145, 144, 144);
     --para-tint:#e4e4e4;
@@ -443,4 +444,84 @@ li{
 }
 .p-img-not-active{
     display: none;
+}
+
+/* ===================================================================
+                   workData animated counter
+====================================================================== */
+
+.section-work-data{
+    background: var(--gradientSupport);
+    text-align: center;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+    color: #f3f4ff;
+
+}
+
+.counter-number{
+    font-size: 4.8rem;
+
+}
+
+.section-work-data p{
+    color: #f3f4ff;
+    text-transform: capitalize;
+}
+
+/* ===================================================================
+                   our services section
+====================================================================== */
+
+.section-services{
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+}
+
+.section-services p{
+    max-width: 60rem;
+}
+
+.section-services .grid{
+    margin-top: 10rem;
+    row-gap: 10rem;
+
+}
+
+.service-box{
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: radius 1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+    padding: 6.4rem  3.4rem;
+    transition: 0.7s all linear ;
+    -webkit-transition: 0.7s all linear ;
+    -moz-transition: 0.7s all linear ;
+    -ms-transition: 0.7s all linear ;
+    -o-transition: 0.7s all linear ;
+}
+
+.service-box :hover, .service-box:active{
+    transform: translateY(-3rem);
+    -webkit-transform: translateY(-3rem);
+    -moz-transform: translateY(-3rem);
+    -ms-transform: translateY(-3rem);
+    -o-transform: translateY(-3rem);
+}
+
+.service-icon{
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--icon-color);
+    display: inline-block;
+    
 }
